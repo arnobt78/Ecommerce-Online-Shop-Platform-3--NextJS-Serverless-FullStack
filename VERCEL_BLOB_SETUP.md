@@ -3,11 +3,13 @@
 ## Step-by-Step Guide
 
 ### Step 1: Navigate to Storage Tab
+
 1. In your Vercel dashboard, look at the **top navigation bar**
 2. Click on the **"Storage"** tab (not Settings → Storage)
 3. You should see options to create databases
 
 ### Step 2: Create Blob Storage
+
 1. On the Storage page, you'll see different storage options
 2. Look for **"Blob"** - it should show "Fast object storage"
 3. Click the **"Create"** button next to Blob
@@ -16,6 +18,7 @@
 6. Click **"Create"** to create the Blob store
 
 ### Step 3: Get the Read/Write Token
+
 After creating the Blob store:
 
 1. You'll be taken to the Blob store details page
@@ -26,6 +29,7 @@ After creating the Blob store:
 6. Copy the token (it will look like: `vercel_blob_xxxxx_xxxxx_xxxxx`)
 
 ### Step 4: Add Token to Environment Variables
+
 1. Go to your project: **store-next-beta**
 2. Navigate to: **Settings** → **Environment Variables**
 3. Add a new variable:
@@ -35,7 +39,9 @@ After creating the Blob store:
 4. Click **"Save"**
 
 ### Step 5: Update Local .env File
+
 Add the same token to your local `.env` file:
+
 ```env
 BLOB_READ_WRITE_TOKEN=vercel_blob_xxxxx_xxxxx_xxxxx
 ```
@@ -57,7 +63,7 @@ If you don't see the Blob option in the Storage tab:
 
 ## Quick Visual Guide
 
-```
+```bash
 Vercel Dashboard
 ├── Top Navigation Bar
 │   └── Click "Storage" ← YOU ARE HERE
@@ -72,6 +78,7 @@ Vercel Dashboard
 ## After Setup
 
 Once you have the token:
+
 1. ✅ Add it to Vercel Environment Variables
 2. ✅ Add it to your local `.env` file
 3. ✅ Run `npm install` to install `@vercel/blob`
@@ -80,4 +87,3 @@ Once you have the token:
 ---
 
 **Note**: The Blob storage is free for reasonable usage, but check Vercel's pricing for your specific needs.
-

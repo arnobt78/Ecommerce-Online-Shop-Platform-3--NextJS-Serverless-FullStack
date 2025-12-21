@@ -43,3 +43,5 @@ next-env.d.ts
 .next
 .vscode
 .cursorignore
+
+HETZNER_VPS_MIGRATION_GUIDE.md
