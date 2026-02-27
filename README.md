@@ -1,5 +1,15 @@
 # Next Store | E-Commerce Platform 3 - Next.js, TypeScript, Prisma, PostgreSQL, Vercel Blob, Clerk, Stripe Fullstack Project (including Admin Panel)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-18.3.1-blue)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-green)](https://www.typescriptlang.org/)
+[![Prisma](https://img.shields.io/badge/Prisma-5-purple)](https://www.prisma.io/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-orange)](https://www.postgresql.org/)
+[![Vercel Blob Storage](https://img.shields.io/badge/Vercel%20Blob%20Storage-1-yellow)](https://vercel.com/docs/storage/vercel-blob)
+[![Clerk](https://img.shields.io/badge/Clerk-5-blue)](https://clerk.com/)
+[![Stripe](https://img.shields.io/badge/Stripe-16-green)](https://stripe.com/)
+
 A beautifully designed, high-performance e-commerce platform built with Next.js 14, TypeScript, Prisma, PostgreSQL, Vercel Blob Storage, Clerk authentication, Stripe payments, and shadcn/ui. Next Store offers a seamless online shopping experience with fast checkout, secure payments, and a curated selection of products.
 
 - **Live-Demo:** [https://store-next-beta.vercel.app/](https://store-next-beta.vercel.app/)
@@ -46,7 +56,6 @@ A beautifully designed, high-performance e-commerce platform built with Next.js 
 ### Core Features
 
 - **🛍️ Product Management**
-
   - Browse products with grid and list views
   - Search and filter products by name or company
   - Featured products showcase on homepage
@@ -54,47 +63,40 @@ A beautifully designed, high-performance e-commerce platform built with Next.js 
   - Admin CRUD operations for products
 
 - **🛒 Shopping Cart**
-
   - Add/remove items from cart
   - Update item quantities
   - Real-time cart total calculations
   - Persistent cart per user session
 
 - **💳 Secure Checkout**
-
   - Stripe embedded checkout integration
   - Secure payment processing
   - Order confirmation and tracking
 
 - **⭐ Favorites System**
-
   - Save favorite products
   - Quick access to saved items
   - Toggle favorites with one click
 
 - **📝 Product Reviews**
-
   - Submit product reviews with ratings (1-5 stars)
   - View all reviews for each product
   - Average rating calculation
   - Review management (view and delete your reviews)
 
 - **👤 User Authentication**
-
   - Clerk-powered authentication
   - Multiple sign-in options (Google, GitHub, Email)
   - Protected routes and admin access control
   - User profile management
 
 - **👨‍💼 Admin Dashboard**
-
   - Admin-only product management
   - Sales overview and analytics
   - Order management
   - Image upload and management
 
 - **🎨 Modern UI/UX**
-
   - Dark mode support
   - Responsive design (mobile-first)
   - Beautiful shadcn/ui components
@@ -1009,14 +1011,12 @@ const orders = await fetchAdminOrders();
 ### Product Management Flow
 
 1. **Create Product:**
-
    - Admin fills form with product details
    - Image is uploaded to Vercel Blob Storage
    - Image URL is returned and stored in database
    - Product is created with all details
 
 2. **Update Product:**
-
    - Admin edits product details
    - If image is updated, old image is deleted
    - New image is uploaded and URL updated
@@ -1185,14 +1185,12 @@ git push origin main
 ```
 
 1. **Import to Vercel**
-
    - Go to [Vercel Dashboard](https://vercel.com/dashboard)
    - Click **Add New Project**
    - Import your GitHub repository
    - Vercel will auto-detect Next.js
 
 1. **Configure Environment Variables**
-
    - Go to **Settings** → **Environment Variables**
    - Add all variables from `.env` and `.env.local`
    - Set for all environments (Production, Preview, Development)
@@ -1280,44 +1278,37 @@ This ensures Prisma Client is generated before building.
 This project demonstrates:
 
 1. **Modern Next.js Patterns:**
-
    - App Router architecture
    - Server Components vs Client Components
    - Server Actions for mutations
    - API Routes for external integrations
 
 2. **Type Safety:**
-
    - TypeScript throughout
    - Prisma type generation
    - Zod schema validation
 
 3. **Database Design:**
-
    - Relational database modeling
    - Cascade deletions
    - Efficient queries
 
 4. **Authentication & Authorization:**
-
    - Clerk integration
    - Protected routes
    - Role-based access (admin)
 
 5. **Payment Integration:**
-
    - Stripe embedded checkout
    - Payment confirmation flow
    - Order management
 
 6. **File Storage:**
-
    - Vercel Blob Storage
    - Image upload handling
    - Public URL generation
 
 7. **UI/UX Best Practices:**
-
    - Responsive design
    - Dark mode
    - Loading states
